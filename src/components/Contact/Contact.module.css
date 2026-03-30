@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.container:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.text p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--text-main);
+  margin: 0;
+}
+
+/* İkon stili */
+.icon {
+  color: var(--text-secondary); 
+  font-size: 14px;
+}
+
+
+.text p:first-child {
+  font-weight: 600;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #fee2e2; 
+  color: var(--danger-color); 
+  border: 1px solid transparent;
+  border-radius: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--danger-color);
+  color: white;
+}

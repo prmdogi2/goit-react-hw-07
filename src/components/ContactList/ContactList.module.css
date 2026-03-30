@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Kartlar arası boşluk */
+  max-height: 400px; /* Liste çok uzarsa kaydırma çubuğu çıksın */
+  overflow-y: auto;
+  padding-right: 5px; /* Scrollbar için boşluk */
+}
+
+/* Scrollbar tasarımı (Webkit tarayıcılar için) */
+.list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 10px;
+}
